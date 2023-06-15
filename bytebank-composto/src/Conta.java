@@ -36,5 +36,7 @@ Maneira de fazer alguma coisa
 
 this. é uma variável de referência que diz respeito a instância atual de um objeto
 this serve como sujeito, quem vai praticar a ação
+
+Quando muitas informações correlatas aparecerem é melhor criar uma nova classe
 */
 
