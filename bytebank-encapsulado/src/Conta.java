@@ -1,9 +1,9 @@
 class Conta{
 	private double saldo;
 	//Um atributo privado não pode ser nem lido e nem alterado, a não ser que seja na própria classe
-	int agencia;
-	int numero;
-	Cliente titular;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 	//Atribuindo uma referência ao atributo titular//associação
 	
 	public void deposita(double valor) {
@@ -31,6 +31,31 @@ class Conta{
 	public double getSaldo() {
 		return this.saldo;
 	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+		
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+	
 }
 /*
 Quando o Java cria objetos, todos seus atributos são zerados (valor default)
