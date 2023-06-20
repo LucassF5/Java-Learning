@@ -16,6 +16,7 @@ class Conta{
 		
 		this.agencia = agencia;
 		this.numero = numero;
+		this.saldo = 100;
 		//System.out.println("Criando uma conta " + this.numero);
 	}
 	
