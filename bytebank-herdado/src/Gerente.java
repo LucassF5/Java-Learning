@@ -2,6 +2,7 @@
 //Gerente é um Funcionario, Gerente herda da classe Funcionario
 public class Gerente extends Funcionario {
 	//extends serve para a classe herdar métodos de outra
+	//Assim, gerente passa a ser um funcionário e possui seus campos
 	
 	private int senha;
 	
@@ -19,8 +20,11 @@ public class Gerente extends Funcionario {
 		
 	}
 	
-	/*public double getBonificacao() {
-		return this.salario;
-	}*/
+	public double getBonificacao() {
+		return super.salario;
+//		super serve pra dizer que o atributo está em uma classe superior, não foi definido aqui
+//		o salário vem de cima
+//		reescrita, reescrevendo um trecho da classe mãe na classe filha
+	}
 	
 }
