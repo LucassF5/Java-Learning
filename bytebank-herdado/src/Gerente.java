@@ -21,7 +21,7 @@ public class Gerente extends Funcionario {
 	}
 	
 	public double getBonificacao() {
-		return super.salario;
+		return super.getBonificacao() + super.getSalario();
 //		super serve pra dizer que o atributo está em uma classe superior, não foi definido aqui
 //		o salário vem de cima
 //		reescrita, reescrevendo um trecho da classe mãe na classe filha
