@@ -1,5 +1,6 @@
 
 public abstract class Funcionario {
+//	Com abstract não pode mais instanciiar objetos dessa classe
 	
 	private String nome;
 	private String cpf;
@@ -7,13 +8,10 @@ public abstract class Funcionario {
 //	protected significa público para os filhos
 	
 	
-	public Funcionario() {
-		
-	}
-	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+//	método sem corpo, não há implementação
+//	Só há implementação nas classes filhas
+//	Com um método abstrato, todos os filhos são obrigados a colocar esse método
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
