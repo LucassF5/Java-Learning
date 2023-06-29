@@ -1,20 +1,15 @@
 
-public class Administrador extends Funcionario implements Autenticavel
-{
+public class Cliente implements Autenticavel {
+//	Quem assina o contrato da interface implementa seus métodos
 	private int senha;
 	
-	@Override
-	public double getBonificacao() {
-		return 50;
-	}
-
 	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
 
 	@Override
-	public boolean autentica(int senha){
+	public boolean autentica(int senha) {
 		if(this.senha == senha) {
 			return true;
 		} else {

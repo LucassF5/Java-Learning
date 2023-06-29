@@ -2,6 +2,9 @@
 public class TesteGerente {
 
 	public static void main(String[] args) {
+		
+		Gerente referencia = new Gerente();
+		
 		Gerente g1 = new Gerente();
 		g1.setNome("Lucas");
 		g1.setCpf("4322541");

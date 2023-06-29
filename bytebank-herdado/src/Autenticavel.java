@@ -1,19 +1,13 @@
+//Interface é um tipo de contrato
+//contrato Autenticavel
+	//Quem assina esse contrato precia implementar
+		//metodo setSenha
+		//metodo autentica
 
-public abstract class FuncionarioAutenticavel extends Funcionario {
-
-	private int senha;
+public abstract interface Autenticavel {
+//	Interface não pode ter nada concreto, tudo abstrato
 	
-	public void setSenha(int senha) {
-		this.senha = senha;
-	}
+	public abstract void setSenha(int senha);
 	
-	public boolean autentica(int senha) {
-		if(this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
-		
-	}
-
+	public abstract boolean autentica(int senha);
 }
