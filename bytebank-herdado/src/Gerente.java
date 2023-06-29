@@ -1,6 +1,6 @@
 
-//Gerente é um Funcionario, Gerente herda da classe Funcionario
-public class Gerente extends Funcionario {
+//Gerente é um FuncionarioAutenticavel, Gerente herda da classe FuncionarioAutenticavel
+public class Gerente extends FuncionarioAutenticavel {
 	//extends serve para a classe herdar métodos de outra
 	//Assim, gerente passa a ser um funcionário e possui seus campos
 	
