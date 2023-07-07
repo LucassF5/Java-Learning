@@ -5,16 +5,12 @@ public class Fluxo {
         System.out.println("Início do main");
         try {
         	metodo1();        	            	
-        } catch(ArithmeticException ex) {
-//        	String msg = ex.getMessage(); //msg guarda a mensagem de erro
-//        	System.out.println("ArithmeticException" + msg);
-        	ex.printStackTrace(); //Mostra o rastro por onde houve erros no código
-        } catch(NullPointerException ex) {
-        	String msg = ex.getMessage();
-        	System.out.println("NullPointerException" + msg);
+        } catch(ArithmeticException | NullPointerException ex) {
+        	String msg = ex.getMessage(); //msg guarda a mensagem de erro
+        	System.out.println("Exception" + msg);
 //        	ex.printStackTrace(); //Mostra o rastro por onde houve erros no código
         }
-        System.out.println("Fim do main");
+        	System.out.println("Fim do main");
     }
 
     private static void metodo1() {
