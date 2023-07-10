@@ -5,10 +5,10 @@ public class Fluxo {
         System.out.println("Início do main");
         try {
         	metodo1();        	            	
-        } catch(ArithmeticException | NullPointerException ex) {
+        } catch(ArithmeticException | NullPointerException | MinhaException ex) {
         	String msg = ex.getMessage(); //msg guarda a mensagem de erro
-        	System.out.println("Exception" + msg);
-//        	ex.printStackTrace(); //Mostra o rastro por onde houve erros no código
+        	System.out.println("Exception " + msg);
+        	ex.printStackTrace(); //Mostra o rastro por onde houve erros no código
         }
         	System.out.println("Fim do main");
     }
@@ -21,12 +21,7 @@ public class Fluxo {
 
     private static void metodo2() {
         System.out.println("Início do metodo2");
-        for(int i = 1; i <= 5; i++) {
-            System.out.println(i);
-//          int a = i/0;
-            Conta c = null;
-            c.deposita(); 
-        }
-        System.out.println("Fim do metodo2");
+        throw new MinhaException("Deu errado");
+//        System.out.println("Fim do metodo2");
     }
 }
