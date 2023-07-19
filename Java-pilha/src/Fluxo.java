@@ -6,7 +6,8 @@ public class Fluxo {
 //        Não é necessário colocar "throws MinhaException" pois há um bloco try catch
         try {
         	metodo1();        	            	
-        } catch(ArithmeticException | NullPointerException | MinhaException ex) {
+//        } catch(ArithmeticException | NullPointerException | MinhaException ex) {
+        } catch(Exception ex) { //catch polimórfico 
         	String msg = ex.getMessage(); //msg guarda a mensagem de erro
         	System.out.println("Exception " + msg);
         	ex.printStackTrace(); //Mostra o rastro por onde houve erros no código
