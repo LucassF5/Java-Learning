@@ -12,9 +12,9 @@ public class ContaCorrente extends Conta implements Tributavel {
 	@Override
 //	Override serve pra sobrescrever um método já existente
 //	reescrevendo o método saca
-	public boolean saca(double valor) {
+	public void saca(double valor) {
 		double valorASacar = valor + 0.2;
-		return super.saca(valorASacar);
+		super.saca(valorASacar);
 	}
 
 	@Override
