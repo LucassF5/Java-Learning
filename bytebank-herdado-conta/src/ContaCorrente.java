@@ -12,7 +12,7 @@ public class ContaCorrente extends Conta implements Tributavel {
 	@Override
 //	Override serve pra sobrescrever um método já existente
 //	reescrevendo o método saca
-	public void saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteExcecption{
 		double valorASacar = valor + 0.2;
 		super.saca(valorASacar);
 	}

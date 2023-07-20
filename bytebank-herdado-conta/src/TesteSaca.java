@@ -5,13 +5,18 @@ public class TesteSaca {
 		Conta conta = new ContaCorrente(213, 321);
 		
 		conta.deposita(200);
-		conta.saca(190);
+//		conta.saca(190);
 		
 		System.out.println("Primeiro saque: " + conta.getSaldo());
 		
-		conta.saca(10);
+		try {			
+			conta.saca(210);
+		} catch (SaldoInsuficienteExcecption ex) {
+			System.out.println("Erro, valor de saldo menor do que o de saque");
+			System.out.println("Ex: " + ex.getMessage());
+		}
 		
-		System.out.println("Segundo saque: " + conta.getSaldo());
+		System.out.println("Saldo: " + conta.getSaldo());
 		
 	}
 
