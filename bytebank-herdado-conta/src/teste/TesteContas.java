@@ -1,12 +1,13 @@
+package teste;
 
 public class TesteContas {
 
-	public static void main(String[] args) throws SaldoInsuficienteExcecption{
-
-		ContaCorrente cc = new ContaCorrente(111, 111);
+	public static void main(String[] args) throws modelo.SaldoInsuficienteExcecption{
+		//Full Qualified Name FQN
+		modelo.ContaCorrente cc = new modelo.ContaCorrente(111, 111);
 		cc.deposita(100);
 		
-		ContaPoupanca cp = new ContaPoupanca(222, 222);
+		modelo.ContaPoupanca cp = new modelo.ContaPoupanca(222, 222);
 		cp.deposita(200);
 		
 		cc.transfere(10, cp);

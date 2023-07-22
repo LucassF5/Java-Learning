@@ -1,3 +1,4 @@
+package modelo;
 
 public class SaldoInsuficienteExcecption extends Exception{
 	//Antes extendia de RuntimeException

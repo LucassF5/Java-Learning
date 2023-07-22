@@ -1,4 +1,5 @@
-
+package modelo;
+//modelo.CalculadorDeImposto => FQN
 public class CalculadorDeImposto {
 
 	private double totalImposto;

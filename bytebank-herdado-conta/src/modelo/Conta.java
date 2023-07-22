@@ -1,3 +1,5 @@
+package modelo;
+
 public abstract class Conta {
 
     protected double saldo; //protected só os filhos enxergam
