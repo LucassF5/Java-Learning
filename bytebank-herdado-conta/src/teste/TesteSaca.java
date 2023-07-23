@@ -1,9 +1,11 @@
 package teste;
 
+import modelo.*;
+
 public class TesteSaca {
 
 	public static void main(String[] args) {
-		modelo.Conta conta = new modelo.ContaCorrente(213, 321);
+		Conta conta = new ContaCorrente(213, 321);
 		
 		conta.deposita(200);
 //		conta.saca(190);
@@ -12,7 +14,7 @@ public class TesteSaca {
 		
 		try {			
 			conta.saca(210);
-		} catch (modelo.SaldoInsuficienteExcecption ex) {
+		} catch (SaldoInsuficienteExcecption ex) {
 			System.out.println("Erro, valor de saldo menor do que o de saque");
 			System.out.println("Ex: " + ex.getMessage());
 		}
