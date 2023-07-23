@@ -1,5 +1,11 @@
 package modelo;
 
+/**
+ * Classe que representa um cliente no Bytebank
+ * 
+ * @author Lucas Franco
+ * @version0.1
+ */
 
 public class Cliente {
 

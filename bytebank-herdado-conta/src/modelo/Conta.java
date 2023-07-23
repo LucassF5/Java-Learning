@@ -1,5 +1,12 @@
 package modelo;
 
+/**
+ * Classe que representa a moldura de uma conta
+ * 
+ * @author Lucas Franco
+ *
+ */
+
 public abstract class Conta {
 
     protected double saldo; //protected só os filhos enxergam
@@ -8,6 +15,13 @@ public abstract class Conta {
     private Cliente titular;
     private static int total = 0;
 
+    /**
+     * Construtor para inicializar o objeto Conta a partir de agência e número
+     * 
+     * @param agencia
+     * @param numero
+     */
+    
     public Conta(int agencia, int numero){
         Conta.total++;
 //        System.out.println("O total de contas é " + Conta.total);
@@ -22,6 +36,13 @@ public abstract class Conta {
 //        this.saldo = this.saldo + valor;
 //    }
 
+    /**
+     * Valor precisa ser maior que o saldo
+     * 
+     * @param valor
+     * @throws SaldoInsuficienteExcecption
+     */
+    
     public void saca(double valor) throws SaldoInsuficienteExcecption{
         if(this.saldo < valor) {
         	throw new SaldoInsuficienteExcecption("Saldo: " + this.saldo + " Valor: " + valor);
