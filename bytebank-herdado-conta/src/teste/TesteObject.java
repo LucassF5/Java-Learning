@@ -4,7 +4,7 @@ import modelo.Cliente;
 import modelo.ContaCorrente;
 import modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteObject {
 
 	public static void main(String[] args) {
 
