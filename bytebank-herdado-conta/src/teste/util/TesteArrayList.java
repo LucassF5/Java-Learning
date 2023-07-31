@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import modelo.Conta;
 import modelo.ContaCorrente;
 
-public class Teste {
+public class TesteArrayList {
 
 	public static void main(String[] args) {
 		
