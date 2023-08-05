@@ -9,9 +9,7 @@ public class TesteArrayList {
 
 	public static void main(String[] args) {
 		
-		//Generics <>
 		ArrayList <Conta> lista = new ArrayList <Conta> ();
-		//<definindo o tipo de referência que vai ser guardada em ArrayList>		
 		
 		Conta cc = new ContaCorrente(13, 4310);
 		lista.add(cc);
@@ -19,30 +17,24 @@ public class TesteArrayList {
 		Conta cc2 = new ContaCorrente(62, 6234);
 		lista.add(cc2);
 		
-		System.out.println("Tamanho da lista: "+lista.size());
-		Conta ref = (Conta) lista.get(0);
-		System.out.println(ref.getAgencia());
-		lista.remove(1);
-		System.out.println("Tamanho da lista: "+lista.size());
+		Conta cc3 = new ContaCorrente(62, 6234);
 		
-		Conta cc3 = new ContaCorrente(54, 7245);
-		lista.add(cc3);
+		boolean existe = lista.contains(cc3);
 		
-		Conta cc4 = new ContaCorrente(26, 5431);
-		lista.add(cc4);
+		System.out.println("Já existe?: " + existe);
 		
-		Conta cc5 = new ContaCorrente(74, 2546);
-		lista.add(cc5);
+		System.out.println("cc é igual a cc3?: " + cc.equals(cc3));
+		System.out.println("cc2 é igual a cc3?: " + cc2.equals(cc3));
 		
-		for(int i = 0; i < lista.size(); i++) {
-			Object oRef =  lista.get(i);
-			System.out.println(oRef);
-		}
-		
-		System.out.println("------------------");
+//		for(Conta conta : lista) { 
+//			if(conta.equals(cc3)) {
+//				System.out.println("Já tenho essa conta");
+//			} else {
+//				System.out.println("Não possuo essa conta");
+//			}
+//		}
 		
 		for(Conta conta : lista) { 
-			//outra forma(mais atual) de iterar em um for
 			System.out.println(conta);
 		}
 		
