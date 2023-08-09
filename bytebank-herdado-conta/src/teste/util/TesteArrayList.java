@@ -1,8 +1,9 @@
 package teste.util;
 
 //import java.util.ArrayList;
+import java.util.Vector;
 import java.util.List;
-import java.util.LinkedList;
+//import java.util.LinkedList;
 import modelo.Conta;
 import modelo.ContaCorrente;
 
@@ -10,8 +11,8 @@ public class TesteArrayList {
 
 	public static void main(String[] args) {
 		
-		List <Conta> lista = new LinkedList <Conta> ();
-		
+		List <Conta> lista = new Vector <Conta> (); //thread safe
+//		List <Conta> lista = new LinkedList <Conta> ();
 //		ArrayList <Conta> lista = new ArrayList <Conta> ();
 		
 		Conta cc = new ContaCorrente(13, 4310);
